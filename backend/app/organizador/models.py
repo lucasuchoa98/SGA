@@ -18,8 +18,6 @@ def create_auth_token(sender, instance=None, created=False, **kwargs):
     if created:
         Token.objects.create(user=instance)
 
-
-
 LENGTH_CNPJ = 14
 
 def is_cnpj_valido(cnpj: str):
